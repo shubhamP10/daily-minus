@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>add-activity</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label position="floating">Enter Description</ion-label>
+      <ion-input type="text" [(ngModel)]="newActivity.description" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Enter Amount</ion-label>
+      <ion-input type="number" [(ngModel)]="newActivity.amount" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Select Date</ion-label>
+      <ion-input type="date" [(ngModel)]="newActivity.date" required></ion-input>
+    </ion-item>
+
+    <ion-button (click)="addActivity()" expand="block" color="success">ADD ACTIVITY</ion-button>
+  </ion-card>
+</ion-content>
